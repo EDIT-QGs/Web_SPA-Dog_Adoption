@@ -1,13 +1,17 @@
 import type { Route } from "./+types/home";
-import { Welcome } from "../welcome/welcome";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "Teste CI/CD router cloud" },
-    { name: "description", content: "Teste bem sucedido!" },
+    { title: "Teste CI/CD" },
+    { name: "description", content: "Bem-vindo ao teste" },
   ];
 }
 
 export default function Home() {
-  return <Welcome />;
+  return (
+    <div style={{ fontFamily: 'sans-serif' }}>
+      <h2>Página Inicial</h2>
+      <p>O ambiente de teste está limpo e pronto a ser utilizado.</p>
+    </div>
+  );
 }
