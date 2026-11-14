@@ -1,5 +1,5 @@
 import type { Route } from "./+types/home";
-import { Badge } from "../components/badge";
+import { Badge } from "../components/Badge";
 
 export function meta({}: Route.MetaArgs) {
   return [
